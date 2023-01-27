@@ -6,6 +6,8 @@ Description of Program: A "security" program, where a user is asked to answer 3 
 simple math questions. The user gets 5 attempts to correctly answer each question, and if the questions
 are each answered correctly, access is gained to secret info. If not, the user is asked if they would like
 to retry. If yes, the program asks the user 3 new randomly generated questions.
+
+LINK TO MY GIT REPO: https://github.com/TateMinch/CS3080-Coursework
 '''
 
 import random
