@@ -13,6 +13,7 @@ import time
 import sys
 import signal
 
+#a little fun if you try to control-c out
 def signal_handler(sig, frame):
     print('\nGiving up??')
     sys.stdout.flush()
