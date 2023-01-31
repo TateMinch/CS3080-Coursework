@@ -67,7 +67,7 @@ def askQuestions(questionsAndAnswers) -> bool:
             incorrectAnswerAttempts+=1
             answer = input(f'WRONG - try again! ({totalAttemptsAllowed - incorrectAnswerAttempts} attempts remaining): ')
         #if the user has used all of their attempts, break out of for loop and return falsy boolean value
-        if incorrectAnswerAttempts == totalAttemptsAllowed - 1:
+        if incorrectAnswerAttempts == totalAttemptsAllowed:
             break
         #if the user used more than one attempt, but got the answer right, reset incorrectAnswerAttempts to 0 for next question
         elif incorrectAnswerAttempts > 0:
@@ -81,8 +81,7 @@ def askQuestions(questionsAndAnswers) -> bool:
             
 def main():
     #welcome message
-    print('''Welcome to the bridge of self reflection! I am the Troll that owns it! In order to cross the bridge and get access to the secret (and juicy) information,
-you must answer my three questions! I hope you know what integer division is!''')
+    print('''Welcome to the bridge of self reflection! I am the Troll that owns it! In order to cross the bridge and get access to the secret (and juicy) information, you must answer my three questions! I hope you know what integer division is!''')
     while True:
         #call generateQuestions and pass list of questions and answers into askQuestions, storing truthy or falsy boolean value in wrongAnswers variable
         wrongAnswers = askQuestions(generateQuestions())
