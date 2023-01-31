@@ -67,7 +67,7 @@ def askQuestions(questionsAndAnswers) -> bool:
             incorrectAnswerAttempts+=1
             answer = input(f'WRONG - try again! ({totalAttemptsAllowed - incorrectAnswerAttempts} attempts remaining): ')
         #if the user has used all of their attempts, break out of for loop and return falsy boolean value
-        if incorrectAnswerAttempts == totalAttemptsAllowed:
+        if answer != questionsAndAnswers[i][1]:
             break
         #if the user used more than one attempt, but got the answer right, reset incorrectAnswerAttempts to 0 for next question
         elif incorrectAnswerAttempts > 0:
