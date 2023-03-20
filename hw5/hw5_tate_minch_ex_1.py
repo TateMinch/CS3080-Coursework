@@ -1,3 +1,10 @@
+"""
+Homework 5 Exercise 1
+Tate Minch
+March 20, 2023
+This program creates a class called ReverseIter that iterates through the list passed into the constructor.
+"""
+
 class ReverseIter():
     def __init__(self, items:list):
         self.items = items

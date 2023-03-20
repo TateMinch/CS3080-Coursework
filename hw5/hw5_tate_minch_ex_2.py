@@ -1,3 +1,9 @@
+"""
+Homework 5 Exercise 1
+Tate Minch
+March 20, 2023
+This program finds the first n pythagorean triplets and stores them in a generator.
+"""
 def take(n, seq):
     seq = iter(seq)
     result = []
